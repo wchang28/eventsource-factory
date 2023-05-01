@@ -1,0 +1,32 @@
+{
+  "name": "eventsource-factory",
+  "version": "1.0.0",
+  "description": "Environment Independent EventSource Factory",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "transpile": "tsc",
+    "start-sse-server": "node ./node_modules/eventsource/example/sse-server",
+    "run-node-client-test": "node ./dist/test/app.js",
+    "run-browser-client-test": "explorer http://localhost:8080",
+    "browserify-check": "./node_modules/.bin/browserify --list ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wchang28/eventsource-factory.git"
+  },
+  "author": "Wen Chang",
+  "license": "ISC",
+  "dependencies": {
+    "@types/eventsource": "^1.1.11",
+    "eventsource": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "browserify": "^17.0.0",
+    "express": "^4.15.3",
+    "serve-static": "^1.12.3",
+    "ssestream": "^1.1.0",
+    "typescript": "^5.0.4"
+  }
+}
