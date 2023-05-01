@@ -6,7 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "transpile": "tsc",
-    "start-sse-server": "node ./node_modules/eventsource/example/sse-server",
+    "start-sse-server": "node ./sse-server.js",
     "run-node-client-test": "node ./dist/test/app.js",
     "run-browser-client-test": "explorer http://localhost:8080",
     "browserify-check": "./node_modules/.bin/browserify --list ./dist/index.js"
